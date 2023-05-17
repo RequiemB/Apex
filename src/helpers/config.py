@@ -1,6 +1,6 @@
 APPLICATION_ID = ""
 PREFIXES = [";"]
-RAPIDAI_API_KEY = "d4ae69e488msh455bb9ba669a169p13194bjsn706bc39e325a"
+RAPIDAI_API_KEY = ""
 OWNER_IDS = []
 
 # Bot's activity
