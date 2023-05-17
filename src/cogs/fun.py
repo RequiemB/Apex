@@ -192,6 +192,8 @@ class Fun(commands.Cog):
 
     @commands.hybrid_command(description="Starts an interactive Trivia session with the bot.")
     @app_commands.checks.cooldown(1, 10.0, key=lambda i: i.user.id)
+    async def trivia(self, ctx: ApexContext):
+        pass
     
 async def setup(bot):
     await bot.add_cog(Fun(bot))

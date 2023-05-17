@@ -71,7 +71,7 @@ class Apex(commands.Bot):
         await super().close()
     
     async def on_ready(self):
-        self.logger.info("Logged in as ", self.user)
+        self.logger.info(f"Logged in as {self.user}.")
 
     async def on_app_command_error(self, interaction: discord.Interaction, error: app_commands.AppCommandError):
         handler = getattr(handlers, "on_app_command_error")

@@ -65,8 +65,8 @@ async def on_app_command_error(interaction: discord.Interaction, error: app_comm
     if interaction.command is None or hasattr(interaction.command, "error"):
             return
 
-        if hasattr(interaction.command.cog, "on_app_command_error"):
-            func = getattr(interaction.command.cog, "on_app_command_error")
-            await func(interaction, error)
-        else:
-            pass
+    if hasattr(interaction.command.cog, "on_app_command_error"):
+        func = getattr(interaction.command.cog, "on_app_command_error")
+        await func(interaction, error)
+    else:
+        pass
